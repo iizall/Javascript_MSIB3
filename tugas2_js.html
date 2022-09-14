@@ -1,0 +1,73 @@
+<h2 align="center">DAFTAR PEGAWAI</h2>
+<table cellpadding="10" align="center">
+    <thead>
+        <tr bgcolor="orange">
+            <th>NO</th>
+            <th>NAMA</th>
+            <th>JABATAN</th>
+            <th>AGAMA</th>
+            <th>GAJI POKOK</th>
+            <th>TUNJANGAN JABATAN</th>
+            <th>TUNJANGAN KESEHATAN</th>
+            <th>GAJI KOTOR</th>
+            <th>ZAKAT PROFESI</th>
+            <th>TAKE HOME PAY</th>
+        </tr>
+    </thead>
+    <tbody>
+        <script language="javascript">
+            let pegawai, gapok, tunJab, tunKes, gajiKotor, zakatP, takeHomePay;
+            var jabatan = "";
+            var agama = "";
+            var warna = "";
+
+            for (pegawai = 1; pegawai <=100; pegawai++){
+                if (pegawai >=1 && pegawai <= 25){
+                    jabatan = "Manager";
+                }else if (pegawai >=26 && pegawai <= 50){
+                    jabatan = "Asisten Manager";
+                }else if (pegawai >=51 && pegawai <= 75){
+                    jabatan = "Supervisor";
+                }else {
+                    jabatan = "Staff";
+                }
+
+                switch(jabatan){
+                    case 'Manager' : gapok = 15000000; break;
+                    case 'Asisten Manager' : gapok = 10000000; break;
+                    case 'Supervisor' : gapok = 7000000; break;
+                    case 'Staff' : gapok = 5000000; break;
+                    default : gapok = 0;
+                }
+
+                tunJab = 0.2 * gapok;
+                tunKes = 0.1 * gapok;
+                gajiKotor = gapok + tunJab + tunKes;
+
+                agama = (pegawai % 2 == 1) ? 'Muslim' : 'Non Muslim';
+                warna = (pegawai % 2 == 1) ? 'yellow' : 'aqua';
+
+                if(agama == 'Muslim' && gajiKotor >= 7000000){
+                    zakatP = 0.025 * gajiKotor;
+                }else zakatP = 0;
+
+                takeHomePay = gajiKotor - zakatP;
+
+                document.write(`
+                <tr bgcolor="${warna}">
+                    <td>${pegawai}</td>
+                    <td>Pegawai ${pegawai}</td>
+                    <td>${jabatan}</td>
+                    <td>${agama}</td>
+                    <td>Rp. ${gapok}</td>
+                    <td>Rp. ${tunJab}</td>
+                    <td>Rp. ${tunKes}</td>
+                    <td>Rp. ${gajiKotor}</td>
+                    <td>Rp. ${zakatP}</td>
+                    <td>Rp. ${takeHomePay}</td>
+                </tr>
+                `)
+            }
+        </script>
+    </tbody>
+</table>
