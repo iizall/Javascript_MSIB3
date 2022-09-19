@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Function javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container px-5 my-5">
+        <div class="alert alert-primary" role="alert">
+            <h3 class="text-center">Kalkulatorku</h3>
+        </div>
+        <form id="calForm">
+            <div class="form-floating mb-3">
+                <input class="form-control" name="angka1" type="text" placeholder="Angka 1" data-sb-validations="required" />
+                <label for="angka1">Angka 1</label>
+                <div class="invalid-feedback" data-sb-feedback="angka1:required">Angka 1 is required.</div>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" name="angka2" type="text" placeholder="Angka 1" data-sb-validations="required" />
+                <label for="angka1">Angka 2</label>
+                <div class="invalid-feedback" data-sb-feedback="angka2:required">Angka 2 is required.</div>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="" type="text" placeholder="" name="hasil" disabled/>
+                <label for=""></label>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-light" id="reset" name="reset" type="reset">CE</button>
+                <button class="btn btn-primary" type="button" onclick="hitung('tambah')">+</button>
+                <button class="btn btn-info" type="button" onclick="hitung('kurang')">-</button>
+                <button class="btn btn-success" type="button" onclick="hitung('kali')">x</button>
+                <button class="btn btn-warning" type="button" onclick="hitung('bagi')">/</button>
+                <button class="btn btn-danger" type="button" onclick="hitung('pangkat')">^</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="js/kalkulator.js" language="javascript"></script>
+</body>
+</html>
