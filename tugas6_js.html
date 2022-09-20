@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Info Gempa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body background="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2022/08/29/gempa-bumijpg-20220829015745.jpg" style="background-size: cover; backdrop-filter: blur(2px)">
+    <div class="card mt-3" style="width: 60%; margin: auto;">
+        <h5 class="card-header text-center bg-primary text-white">Info Gempa</h5>
+        <div class="card-body">
+          <h5 class="card-title">Informasi Gempa</h5>
+          <div class="alert alert-warning" role="alert">
+            <marquee> &#128226; Dihimbau Kepada Masyarakat Agar Tetap Waspada Bahaya Gempa</marquee>
+          </div>
+          <table class="table table-striped table-hover">
+            <thead>
+                <tr class="table-success">
+                    <th>No</th>
+                    <th>Lokasi</th>
+                    <th>Skala</th>
+                    <th>Dampak</th>
+                </tr>
+            </thead>
+            <tbody id="cetakInfo">
+                <script>
+                    class Gempa{
+                        constructor(lokasi, skala){
+                            this.lokasi = lokasi;
+                            this.skala = skala;
+                            // this.no = 1;
+                            // this.dataGempa += (`
+                            // <tr>
+                            //     <td>${this.no++}</td>
+                            //     <td>${this.lokasi}</td>
+                            //     <td>${this.skala} SR</td>
+                            //     <td>${this.dampak()}</td>
+                            // </tr>
+                            // `);
+                        }
+                
+                        dampak(){
+                            if(this.skala <= 2){
+                                this.berdampak = 'Tidak Terasa';
+                            }else if(this.skala > 2 && this.skala <= 4){
+                                this.berdampak = 'Bangunan Retak-Retak';
+                            }else if(this.skala > 4 && this.skala <= 6){
+                                this.berdampak = 'Bangunan Roboh';
+                            }else this.berdampak = 'Bangunan Roboh dan Berpotensi Tsunami';
+                
+                            return this.berdampak;
+                        }
+                
+                        infoGempa(no){
+                            document.write(`
+                            <tr>
+                                <td>${no}</td>
+                                <td>${this.lokasi}</td>
+                                <td>${this.skala} SR</td>
+                                <td>${this.dampak()}</td>
+                            </tr>
+                            `);
+                        }
+                    }
+                
+                    data1 = new Gempa('Sumatera Utara', 1.4);
+                    data2 = new Gempa('Sumatera Barat', 3.2);
+                    data3 = new Gempa('Aceh', 6.3);
+                    data4 = new Gempa('Sumatera Selatan', 4.8);
+                    data5 = new Gempa('Jambi', 2.7);
+                    data6 = new Gempa('Lampung', 7.6);
+                    data7 = new Gempa('Riau', 0.9);
+                    data8 = new Gempa('Kepulaun Riau', 6.2);
+                    data9 = new Gempa('Jawa Barat', 3.8);
+                    data10 = new Gempa('Jawa Tengah', 0.2);
+                
+                    data1.infoGempa(1); data2.infoGempa(2); data3.infoGempa(3); data4.infoGempa(4); data5.infoGempa(5);
+                    data6.infoGempa(6); data7.infoGempa(7); data8.infoGempa(8); data9.infoGempa(9); data10.infoGempa(10);
+                </script> 
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
