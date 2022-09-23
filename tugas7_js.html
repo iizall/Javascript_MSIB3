@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pengenalan Jenis dan Suara Hewan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        #kartu:hover{
+            background-color: rgb(213, 210, 210);
+        }
+    </style>
+    
+</head>
+  <body style="background-color: rgb(213, 213, 248)">
+    <div class="container-fluid shadow bg-body rounded p-5 mt-3" style="width: 90%; height: 650px;">
+        <div class="row text-center">
+            <div class="col-md-12 mb-3">
+                <h3>Pengenalan Jenis dan Suara Hewan</h3>
+            </div>
+            <div class="alert alert-primary" role="alert">
+               &#128226; Silahkan Pilih Menu Jenis Hewan
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="accordion accordion-flush" id="accordionFlushExampleOne">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingSatu">
+                        <button class="accordion-button collapsed border border-primary  shadow bg-body rounded" style="border-radius: 10px" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSatu" aria-expanded="false" aria-controls="flush-collapseSatu">
+                          <b>Hewan Unggas</b>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseSatu" class="accordion-collapse collapse" aria-labelledby="flush-headingSatu" data-bs-parent="#accordionFlushExampleOne">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Ayam
+                                        </div>
+                                        <div class="card-body ayam" id="kartu" style="height: 120px;">
+                                            <p id="teksayam">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Bebek
+                                        </div>
+                                        <div class="card-body bebek" id="kartu" style="height: 120px;">
+                                            <p id="teksbebek">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Ayam Jantan
+                                        </div>
+                                        <div class="card-body ayamjantan" id="kartu" style="height: 120px;">
+                                            <p id="teksayamjantan">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Kalkun
+                                        </div>
+                                        <div class="card-body kalkun" id="kartu" style="height: 120px;">
+                                            <p id="tekskalkun">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="accordion accordion-flush" id="accordionFlushExampleTwo">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed border border-primary shadow bg-body rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <b>Hewan Ternak</b>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExampleTwo">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Sapi
+                                        </div>
+                                        <div class="card-body sapi" id="kartu" style="height: 120px;">
+                                            <p id="tekssapi">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Domba
+                                        </div>
+                                        <div class="card-body domba" id="kartu" style="height: 120px;">
+                                            <p id="teksdomba">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Unta
+                                        </div>
+                                        <div class="card-body unta" id="kartu" style="height: 120px;">
+                                            <p id="teksunta">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Kerbau
+                                        </div>
+                                        <div class="card-body kerbau" id="kartu" style="height: 120px;">
+                                            <p id="tekskerbau">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="accordion accordion-flush" id="accordionFlushExampleThree">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed  border border-primary shadow bg-body rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <b>Hewan Buas</b>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExampleThree">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Singa
+                                        </div>
+                                        <div class="card-body singa" id="kartu" style="height: 120px;">
+                                            <p id="tekssinga">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Harimau
+                                        </div>
+                                        <div class="card-body harimau" id="kartu" style="height: 120px;">
+                                            <p id="teksharimau">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Macan Tutul
+                                        </div>
+                                        <div class="card-body macanTutul" id="kartu" style="height: 120px;">
+                                            <p id="teksmacanTutul">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-primary text-white">
+                                          Serigala
+                                        </div>
+                                        <div class="card-body serigala" id="kartu" style="height: 120px;">
+                                            <p id="teksserigala">Klik Disini!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        $("document").ready(function(){
+            //Hewan Unggas
+            $(".ayam").click(function(){
+                $(this).css({
+                    'background' : "url(assets/ayam.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#teksayam").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/ayam.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".bebek").click(function(){
+                $(this).css({
+                    'background' : "url(assets/bebek.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#teksbebek").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/bebek.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".ayamjantan").click(function(){
+                $(this).css({
+                    'background' : "url(assets/ayamjantan.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#teksayamjantan").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/ayamjantan.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".kalkun").click(function(){
+                $(this).css({
+                    'background' : "url(assets/kalkun.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#tekskalkun").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/kalkun.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+
+            //Hewan Ternak
+            $(".sapi").click(function(){
+                $(this).css({
+                    'background' : "url(assets/sapi.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#tekssapi").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/sapi.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".domba").click(function(){
+                $(this).css({
+                    'background' : "url(assets/domba.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#teksdomba").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/domba.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".unta").click(function(){
+                $(this).css({
+                    'background' : "url(assets/unta.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#teksunta").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/unta.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".kerbau").click(function(){
+                $(this).css({
+                    'background' : "url(assets/kerbau.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#tekskerbau").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/kerbau.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+
+            //Hewan Buas
+            $(".singa").click(function(){
+                $(this).css({
+                    'background' : "url(assets/singa.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#tekssinga").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/singa.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".harimau").click(function(){
+                $(this).css({
+                    'background' : "url(assets/harimau.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#teksharimau").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/harimau.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".macanTutul").click(function(){
+                $(this).css({
+                    'background' : "url(assets/macanTutul.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#teksmacanTutul").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/macanTutul.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".serigala").click(function(){
+                $(this).css({
+                    'background' : "url(assets/serigala.png)",
+                    'background-size' : "auto 112px",
+                    'background-repeat' : "no-repeat",
+                    'background-position' : "center"
+                });
+                $("#teksserigala").css({
+                    'visibility' : "hidden"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "assets/serigala.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+        });
+    </script>
+  </body>
+</html>
